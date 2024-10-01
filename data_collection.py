@@ -28,7 +28,7 @@ def build_company_graph():
 def collect_news_sentiment():
     sentiment_pipeline = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english", device=0)
     news_sentiments = {}
-    api_key = '4402cacfb4c74d3ab6f407ae0d51c7cd'  # Replace with your NewsAPI key
+    api_key = '*402*acf*4**4d3*b*f4*7ae0d*1c*cd'  # Replace with your NewsAPI key
     for ticker in TICKERS:
         sentiments, dates = get_news_sentiment(ticker, sentiment_pipeline, api_key)
         news_sentiments[ticker] = {'dates': dates, 'sentiments': sentiments}
